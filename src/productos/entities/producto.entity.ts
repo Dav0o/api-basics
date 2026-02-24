@@ -54,4 +54,11 @@ export class Producto extends Model {
         field: 'Activo'
     })
     Activo: boolean;
+
+    @AllowNull(true)
+    @Column({
+        type: DataType.DATE,
+        field: 'FechaActualizacion'
+    })
+    FechaActualizacion: Date;
 }
